@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="portfolio.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="main">
+            
+            <div class="content">
+                <div class="page-header" id="page-header">
+                    <span style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" id="hi">Hi</span> 
+                    <span style="font: size 1.6em; color:aquamarine" >.</span>
+                    <p>This is Tobi.</p>
+
+                </div>
+                <div class="about" id="about">
+                    <p>I am currently learning about networks and webpages.The tech stacks that I work with includes Html, css and python. </p>
+                    <p>My recent adventures have led me to become a game dev enthusiast.</p>
+                </div>
+                <div class="socials" id="conts">
+                    <a href="https://www.instagram.com"><img src="insta.png" id="insta"></a>
+                    <a href="https://www.linkedin.com"><img src="linkedin.png" id=link"></a>
+                </div>
+            </div>
+            <div class="head" id="head">
+                <ul>
+                <li><a href="#page-header" class="btn active" id="home">Home</a></li>
+                <li><a href="#about" class="btn" id="abt">About</a></li>
+                <li><a href="#conts" class="btn" id="contacts">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="footer">
+                © 2023 Tobi
+            </div>
+        </div>
+    <script>
+        var header = document.getElementById("head");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+        });
+        }
+    </script>
+    </body>
+</html>

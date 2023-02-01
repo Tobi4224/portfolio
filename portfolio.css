@@ -1,0 +1,69 @@
+html{
+    scroll-behavior: smooth;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+    overflow-x: hidden;
+}
+.page-header{
+    color:white;
+    padding-top: 5%;
+    padding-left: 10%;
+    position: relative; top:50px; left:50px;
+    font-size: 80px;    
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.page-header #hi:hover{
+    font-size: 100px;
+}
+.about{
+    color:white;
+    padding-top: 4%;
+    padding-left: 10%;
+    position: relative; top:50px; left:50px;
+    font-size: 20px;    
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.page-header p{
+    font-size: 20px;
+    color: white;
+}
+ul{
+    position: fixed; top:5%; left:70%;
+    display: flex;
+    align-items: center;
+}
+li{
+    list-style: none;
+    margin-left: 20px;
+}
+li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: rgb(65, 64, 64);
+    border-radius: 20px;
+}
+li a:hover, li a.active{
+    background: white;
+    color: rgb(33, 32, 32);
+}
+.socials{   
+    padding-left: 10%;
+    position: relative; top:500px; left:50px;
+}
+img{
+    position: relative; left:500px;
+    width: 60px;
+    padding:3px;
+}
+img:hover{
+    
+    width: 80px;
+}
+.footer{
+    position: relative; top:550px;
+    padding-left: 20%;
+    color: rgb(148, 148, 148);
+}
